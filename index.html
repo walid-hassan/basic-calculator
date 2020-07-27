@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800;1,800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="calculator">
+        <div class="basic-calculator">
+            <div class="headline"><p>Calculator</p></div>
+            <div id="main-calculator">
+                <div id="screen">
+                    <input type="text" value="0" id="screen-input">
+                </div>
+                <div id="buttons">
+                    <button id="btn1" onclick="buttonClick('1')">1</button>
+                    <button id="btn2" onclick="buttonClick('2')">2</button>
+                    <button id="btn3" onclick="buttonClick('3')">3</button>
+                    <button id="btn4" onclick="buttonClick('+')">+</button>
+                    <button id="btn5" onclick="buttonClick('4')">4</button>
+                    <button id="btn6" onclick="buttonClick('5')">5</button>
+                    <button id="btn7" onclick="buttonClick('6')">6</button>
+                    <button id="btn8" onclick="buttonClick('-')">-</button>
+                    <button id="btn9" onclick="buttonClick('7')">7</button>
+                    <button id="btn10" onclick="buttonClick('8')">8</button>
+                    <button id="btn11" onclick="buttonClick('9')">9</button>
+                    <button id="btn12" onclick="buttonClick('*')">*</button>
+                    <button id="btn13" onclick="buttonClick('')">CA</button>
+                    <button id="btn14" onclick="buttonClick('0')">0</button>
+                    <button id="btn15" onclick="backSpace()">&lt;</button>
+                    <button id="btn16" onclick="buttonClick('/')">/</button>
+                    <button id="btn17" onclick="buttonClick('%')">%</button>
+                    <button id="btn18" onclick="buttonClick('.')">.</button>
+                    <button id="btn19" onclick="equalTo()">=</button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </section>
+</body>
+</html>
